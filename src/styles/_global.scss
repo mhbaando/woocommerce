@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $main-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+  font-family: $heading-font;
+  color: $heading-color;
+}
+
+a:link,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.section {
+  padding: 0 55px;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 750px) {
+  .section {
+    padding: 0 45px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .section {
+    padding: 0 30px;
+  }
+}
+
+.bg-gradient {
+  background: rgb(229, 239, 255);
+  background-image: url("../Assets/bgclip.png");
+  background: url("../Assets/bgclip.png"),
+    linear-gradient(
+      180deg,
+      rgba(229, 239, 255, 1) 0%,
+      rgba(229, 239, 255, 0.27) 88%,
+      rgba(229, 239, 255, 0) 100%
+    );
+  background-repeat: no-repeat;
+  background-position: right 0% top 0%;
+  height: 80vh;
+}
+
+.hidden {
+  display: none;
+}
+.no-scroll body {
+  overflow: none;
+}
