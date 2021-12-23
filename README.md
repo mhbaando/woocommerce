@@ -15,4 +15,4 @@ Feel free to download and practice in your local host and make sure to run `npm 
 
 here is the screen shot of the landing page
 
-![](src/Assets/Redesign.jpg)
+![](src/assets/Redesign.jpg)
