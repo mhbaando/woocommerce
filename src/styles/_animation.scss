@@ -1,14 +1,14 @@
 @keyframes fade-in {
   0% {
-    display: none;
+    visibility: hidden;
     opacity: 0;
   }
   1% {
-    display: block;
+    visibility: visible;
     opacity: 0;
   }
   to {
-    display: block;
+    visibility: visible;
     opacity: 1;
   }
 }
@@ -20,14 +20,14 @@
 
 @keyframes fade-out {
   0% {
-    display: block;
+    visibility: visible;
   }
   99% {
-    display: block;
+    visibility: visible;
     opacity: 0;
   }
   to {
-    display: none;
+    visibility: hidden;
     opacity: 0;
   }
 }

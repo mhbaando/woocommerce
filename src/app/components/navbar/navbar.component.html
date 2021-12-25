@@ -41,10 +41,9 @@
             <!-- [className]="Cssclass ? 'wc__nav-menu header__toggle' : 'wc__nav-menu'" -->
 
         </nav>
-        <div [ngClass]="Cssclass ? 'overlay fade-in' : 'fade-out overlay'"></div>
-        <div class="wc__nav-mobile" [ngClass]="Cssclass ? 'fade-in':'fade-out'">
+        <div [ngClass]="Cssclass ? 'overlay fade-in':'overlay fade-out'" [hidden]="!Cssclass"></div>
+        <div class="wc__nav-mobile" [ngClass]="Cssclass ? 'fade-in' :'fade-out'" [hidden]="!Cssclass">
             <ul>
-
                 <li>
                     <a href="#">Sale</a>
                 </li>

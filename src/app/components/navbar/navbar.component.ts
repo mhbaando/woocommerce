@@ -12,5 +12,6 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {}
   onClick() {
     this.Cssclass = !this.Cssclass;
+    console.log(this.Cssclass);
   }
 }
