@@ -13,7 +13,7 @@
     align-items: flex-start;
     margin-right: 2rem;
     h1 {
-      font-size: 2.8125rem;
+      font-size: 3rem;
       line-height: 60px;
       font-weight: 700;
     }
@@ -48,7 +48,7 @@
           font-weight: 500;
           font-size: 18px;
           line-height: 25px;
-          color: $blue;
+          color: $main-color;
           letter-spacing: 1px;
         }
       }
@@ -63,14 +63,14 @@
     background-repeat: no-repeat;
     position: relative;
     min-height: 650px;
-    z-index: -1;
+    z-index: 0;
     img {
       position: absolute;
       width: 100%;
       height: auto;
       opacity: 1;
       top: 0%;
-      right: -8%;
+      right: -6%;
     }
   }
 }

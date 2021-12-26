@@ -4,7 +4,9 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
+:root {
+  height: 100%;
+}
 body {
   font-family: $main-font;
 }
@@ -59,9 +61,26 @@ ul {
     );
   background-repeat: no-repeat;
   background-position: right 0% top 0%;
-  height: 80vh;
+  height: 100%;
+  padding-top: 37px;
 }
-
+.bg-blue {
+  background-image: url("../assets/bg-community.png");
+  background-position: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.bg-testimonial {
+  background: rgb(236, 240, 253);
+  background: linear-gradient(
+    180deg,
+    rgba(236, 240, 253, 0.53) 0%,
+    rgba(214, 218, 234, 0.53) 9%,
+    rgba(178, 182, 202, 1) 48%,
+    rgba(236, 240, 253, 0.43) 81%,
+    rgb(17, 28, 65) 100%
+  );
+}
 .hidden {
   display: none;
 }

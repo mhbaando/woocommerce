@@ -1,0 +1,106 @@
+@import "../../../styles//variable";
+.wc__features {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7.0625rem;
+  flex-wrap: wrap;
+
+  &-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      font-weight: 700;
+      font-size: 2.1875rem;
+      line-height: 2.5rem;
+      max-width: 20rem;
+      text-align: center;
+    }
+  }
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 3.5rem;
+    &_feature {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 32%;
+      img {
+        width: 100%;
+      }
+      &-text {
+        margin-top: 11px;
+        padding-left: 3rem;
+        h3 {
+          font-size: 26px;
+          line-height: 35px;
+          font-weight: 600;
+        }
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 25px;
+          color: $gray;
+          margin: 0.3125rem 0 1.5625rem;
+        }
+        h4 {
+          font-size: 18px;
+          line-height: 25px;
+          font-weight: 700;
+          color: $main-color;
+        }
+      }
+    }
+  }
+}
+
+/*
+************
+Responsive
+************
+*/
+@media screen and (max-width: 900px) {
+  .wc__features {
+    &-content {
+      &_feature {
+        width: 50%;
+        &-text {
+          width: 100%;
+          h3 {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .wc__features {
+    &-content {
+      &_feature {
+        width: 50%;
+        &-text {
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .wc__features {
+    &-content {
+      &_feature {
+        width: 100%;
+        &-text {
+          h3 {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}

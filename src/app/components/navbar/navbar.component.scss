@@ -3,9 +3,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 37px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   &-brand {
     width: 10.5625rem;
     height: 2.13rem;
@@ -37,6 +36,7 @@
       font-weight: 500;
       line-height: 21px;
       color: $heading-color;
+      cursor: pointer;
     }
     button {
       padding: 0.7rem 1rem;
@@ -52,6 +52,7 @@
     img {
       width: 1.25rem;
       height: auto;
+      cursor: pointer;
     }
   }
   &-menu {
@@ -103,7 +104,7 @@ Mobile
   );
   left: 0%;
   top: 0%;
-  z-index: 0;
+  z-index: 1;
 }
 
 .wc__nav-mobile {
@@ -117,6 +118,7 @@ Mobile
   left: 50%;
   width: calc(100% - 5rem);
   transform: translateX(-50%);
+  z-index: 2;
   ul {
     li {
       width: 100%;
