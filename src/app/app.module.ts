@@ -8,6 +8,8 @@ import { HeroSectionComponent } from './home/hero-section/hero-section.component
 import { FeaturesComponent } from './home/features/features.component';
 import { CommunityComponent } from './home/community/community.component';
 import { TestimonialsComponent } from './home/testimonials/testimonials.component';
+import { DevelopersComponent } from './home/developers/developers.component';
+import { FooterComponent } from './home/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { TestimonialsComponent } from './home/testimonials/testimonials.componen
     FeaturesComponent,
     CommunityComponent,
     TestimonialsComponent,
+    DevelopersComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule],
   providers: [],

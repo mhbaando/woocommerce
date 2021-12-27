@@ -1,68 +1,72 @@
-<nav class="wc__nav">
-    <div class="wc__nav-brand">
-        <img src='../../../assets/LOGO.png' alt="Brand Logo">
-    </div>
-    <div class="wc__nav-links">
-        <ul>
-            <li>
-                <a href="#">Sale</a>
-            </li>
-            <li>
-                <a href="#">Marketplace</a>
-            </li>
-            <li>
-                <a href="#">Community</a>
-            </li>
-            <li>
-                <a href="3">
-                    Develope
+<section class="section">
+    <div class="container">
+        <nav class="wc__nav">
+            <div class="wc__nav-brand">
+                <img src='../../../assets/LOGO.png' alt="Brand Logo">
+            </div>
+            <div class="wc__nav-links">
+                <ul>
+                    <li>
+                        <a href="#">Sale</a>
+                    </li>
+                    <li>
+                        <a href="#">Marketplace</a>
+                    </li>
+                    <li>
+                        <a href="#">Community</a>
+                    </li>
+                    <li>
+                        <a href="3">
+                            Develope
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Resources</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="wc__nav-cta">
+                <p>Log In</p>
+                <button type="button">Get Started</button>
+                <a href="#">
+                    <img src="../../../assets/search.png" alt="">
                 </a>
-            </li>
-            <li>
-                <a href="#">Resources</a>
-            </li>
-        </ul>
-    </div>
-    <div class="wc__nav-cta">
-        <p>Log In</p>
-        <button type="button">Get Started</button>
-        <a href="#">
-            <img src="../../../assets/search.png" alt="">
-        </a>
-        <!-- Mobile Menue -->
-        <div [ngClass]="Cssclass ? 'wc__nav-menu header__toggle' : 'wc__nav-menu'" (click)="onClick()">
-            <span></span>
-            <span></span>
-            <span></span>
+                <!-- Mobile Menue -->
+                <div [ngClass]="Cssclass ? 'wc__nav-menu header__toggle' : 'wc__nav-menu'" (click)="onClick()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <!-- [className]="Cssclass ? 'wc__nav-menu header__toggle' : 'wc__nav-menu'" -->
+
+        </nav>
+        <div [ngClass]="Cssclass ? 'overlay fade-in':'overlay fade-out'" [hidden]="!Cssclass"></div>
+        <div class="wc__nav-mobile" [ngClass]="Cssclass ? 'fade-in' :'fade-out'" [hidden]="!Cssclass">
+            <ul>
+                <li>
+                    <a href="#">Sale</a>
+                </li>
+                <li>
+                    <a href="#">Marketplace</a>
+                </li>
+                <li>
+                    <a href="#">Community</a>
+                </li>
+                <li>
+                    <a href="3">
+                        Develope
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Resources</a>
+                </li>
+
+            </ul>
+            <div class="wc__nav-mobile_cta">
+                <p>Log In</p>
+                <button type="button">Get Started</button>
+            </div>
         </div>
     </div>
-    <!-- [className]="Cssclass ? 'wc__nav-menu header__toggle' : 'wc__nav-menu'" -->
-
-</nav>
-<div [ngClass]="Cssclass ? 'overlay fade-in':'overlay fade-out'" [hidden]="!Cssclass"></div>
-<div class="wc__nav-mobile" [ngClass]="Cssclass ? 'fade-in' :'fade-out'" [hidden]="!Cssclass">
-    <ul>
-        <li>
-            <a href="#">Sale</a>
-        </li>
-        <li>
-            <a href="#">Marketplace</a>
-        </li>
-        <li>
-            <a href="#">Community</a>
-        </li>
-        <li>
-            <a href="3">
-                Develope
-            </a>
-        </li>
-        <li>
-            <a href="#">Resources</a>
-        </li>
-
-    </ul>
-    <div class="wc__nav-mobile_cta">
-        <p>Log In</p>
-        <button type="button">Get Started</button>
-    </div>
-</div>
+</section>
