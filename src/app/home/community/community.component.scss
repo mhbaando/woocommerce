@@ -1,16 +1,17 @@
 @import "../../../styles/variable";
+
 .wc__community {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-top: 160px;
-  padding: 10rem 3rem 0;
+  padding: 0rem 3rem 0;
   &-up {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     position: relative;
-    top: -5rem;
+    top: -2rem;
     img {
       width: 35rem;
       height: auto;
@@ -21,7 +22,7 @@
       display: flex;
       max-width: 480px;
       flex-direction: column;
-
+      align-items: flex-start;
       height: auto;
       h3 {
         font-size: 36px;
@@ -52,7 +53,7 @@
     justify-content: flex-end;
     align-items: center;
     position: relative;
-    top: -5rem;
+    bottom: -2rem;
     &_dcontent {
       max-width: 450px;
       h3 {
@@ -91,9 +92,10 @@
 Responisve
 **********
 */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .wc__community {
     &-up {
+      position: relative;
       img {
         width: 50%;
       }
@@ -102,6 +104,7 @@ Responisve
       }
     }
     &-down {
+      bottom: 0;
       padding-top: 50px;
 
       img {
@@ -116,15 +119,12 @@ Responisve
 
 @media screen and (max-width: 750px) {
   .wc__community {
-    min-height: 950px;
-    border: 1px solid red;
+    padding-left: 0;
+    padding-right: 0;
     &-up {
       flex-direction: column;
-      position: relative;
-      min-height: 840px;
       img {
-        // position: absolute;
-        width: 32rem;
+        width: 100%;
       }
       &_content {
         width: 100%;
@@ -132,15 +132,33 @@ Responisve
     }
     &-down {
       flex-direction: column;
-      position: relative;
-      min-height: 540px;
-
+      padding-top: 4rem;
       img {
-        // position: absolute;
-        width: 32rem;
+        width: 100%;
       }
       &_dcontent {
         width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .wc__community {
+    &-up {
+      &_content {
+        h3 {
+          font-size: 1.625rem;
+          line-height: 35px;
+        }
+      }
+    }
+    &-down {
+      &_dcontent {
+        h3 {
+          font-size: 1.625rem;
+          line-height: 35px;
+        }
       }
     }
   }

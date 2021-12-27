@@ -3,13 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'wc-community',
   templateUrl: './community.component.html',
-  styleUrls: ['./community.component.scss']
+  styleUrls: ['./community.component.scss'],
 })
 export class CommunityComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

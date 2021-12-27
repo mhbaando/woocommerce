@@ -1,0 +1,117 @@
+@import "../../../styles/variable";
+.wc__testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 5rem 0 0;
+  &-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 32.5rem;
+    h3 {
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 50px;
+      text-align: center;
+    }
+  }
+  &-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 6.4375rem;
+    position: relative;
+    .card {
+      display: flex;
+      justify-self: center;
+      align-items: center;
+      border-radius: 1.25rem;
+      background-color: #fff;
+      max-width: 45.625rem;
+      height: auto;
+      padding: 106px 82px 87px;
+      background-image: url(../../../assets/quote.png);
+      background-size: 234px 168px;
+      background-position: top 20% center;
+      background-repeat: no-repeat;
+      z-index: 1;
+      p {
+        font-size: 1.375rem;
+        line-height: 2.4375rem;
+        font-weight: 300;
+        text-align: center;
+        color: $gray;
+      }
+    }
+    .card-float {
+      border-radius: 1.25rem;
+      background-color: rgba(235, 235, 235, 0.507);
+      width: 90%;
+
+      max-width: 678px;
+      height: 363px;
+      position: absolute;
+      bottom: -30px;
+    }
+    .card-float-2 {
+      border-radius: 1.25rem;
+      background-color: rgba(235, 235, 235, 0.315);
+      width: 80%;
+      max-width: 678px;
+
+      height: 331px;
+      position: absolute;
+      bottom: -45px;
+      // border: 1px solid red;
+    }
+  }
+  &-buttons {
+    display: flex;
+    position: relative;
+    width: 45.625rem;
+    margin-top: 70px;
+    :not(:last-child) {
+      margin-right: 2rem;
+    }
+    button {
+      background-color: transparent;
+      border: 0;
+      outline: none;
+      position: relative;
+      left: 520px;
+      cursor: pointer;
+    }
+  }
+}
+
+/*
+***********
+Responsive
+***********
+*/
+@media screen and (max-width: 550px) {
+  .wc__testimonials {
+    &-heading {
+      h3 {
+        font-size: 35px;
+        line-height: 40px;
+      }
+    }
+    &-cards {
+      .card {
+        padding: 5rem 2rem;
+        background-position: top 10% center;
+      }
+    }
+    &-buttons {
+      button {
+        left: 320px;
+      }
+    }
+  }
+}
